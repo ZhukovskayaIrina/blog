@@ -6,7 +6,7 @@ description: Навчальні та методичні матеріали дл�
 themcolor: '#202225'
 imghome: img/irishka.jpg
 url: "https://ZhukovskayaIrina.github.io/blog"
-baseurl: "/"
+baseurl: "/blog"
 
 # Build settings
 markdown: kramdown
