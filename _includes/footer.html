@@ -1,0 +1,39 @@
+<footer class="main-footer">
+	<div class="container">
+
+		<nav class="main-menu footer-menu">
+			{% include /main-menu.html %}
+		</nav>
+
+		<nav class="soc">
+			<ul>
+				{{ site.soc }}
+			</ul>
+		</nav>
+
+	</div>
+</footer>
+
+<footer class="bottom-footer">
+	<div class="container text-center">
+		<div class="footer-copy">{{ site.time | date: '%Y' }} © <span class="logo-footer logo-litera">IRINA ZHUKOVSKAYA</span></div>
+		<p>{{ site.copyright }}</p>
+	</div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
+<script id="dsq-count-scr" src="//irishka-zhukovskaya-com.disqus.com/count.js" async></script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2451013216532602",
+          enable_page_level_ads: true
+     });
+</script>
+<!-- end block Google AdSense -->
+
+</body>
+
+</html>

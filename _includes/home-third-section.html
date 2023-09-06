@@ -1,0 +1,11 @@
+<section class="third-section dark-section">
+	<div class="container-fluid">
+		<h2><a href="blog/elektronni-pidruchnyky">Електронні підручники</a></h2>
+		<div class="row">
+
+{% for post in site.categories.elektronni-pidruchnyky limit: 4 offset: 0 %}
+{% include /home-third-section-item.html %}
+{% endfor %}
+		</div>
+	</div>
+</section>

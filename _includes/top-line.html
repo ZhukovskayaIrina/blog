@@ -1,0 +1,25 @@
+<header class="top-line">
+	<a href="{{ site.baseurl }}" class="logo logo-litera">IRINA ZHUKOVSKAYA</a>
+	<div class="search-wrap">
+		<div class="search" title="Пошук по сайту">
+			<div class="fa fa-search"></div>
+		</div>
+		<div class="search-field">
+			<form action="/search.html" id="cse-search-box">
+				<input type="hidden" name="cx" value="partner-pub-2451013216532602:3355617464" />
+				<input type="hidden" name="cof" value="FORID:10" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" placeholder="Пошук по сайту..." />
+			</form>
+		</div>
+	</div>
+
+	<div class="mobile-menu-button"><i class="fa fa-bars"></i> Меню</div>
+	<nav class="main-menu top-menu">
+{% include /main-menu.html %}
+	</nav>
+</header>
+
+<!-- Search Box Code -->
+<!-- <script async src='https://cse.google.com/cse.js?cx=partner-pub-2451013216532602:3355617464'></script><div class="gcse-searchresults-only"></div> -->
+<!-- End block Search Box Code -->

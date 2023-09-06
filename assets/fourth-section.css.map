@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "fourth-section.css",
+  "sources": [
+    "fourth-section.sass"
+  ],
+  "mappings": ";AAAA,AAAA,eAAe,CAAC;EACf,gBAAgB,EAAE,OAAQ,GAAG",
+  "names": []
+}

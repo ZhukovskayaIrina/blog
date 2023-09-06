@@ -1,0 +1,37 @@
+title: Irina Zhukovskaya  'Навчально-методичний блог'
+name: Irina Zhukovskaya
+email: irina.zhukovskaya01@gmail.com
+description: Навчальні та методичні матеріали для студентів 
+
+themcolor: '#202225'
+imghome: img/irishka.jpg
+url: "https://ZhukovskayaIrina.github.io/blog"
+baseurl: "/"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-feed
+category_dir: blog
+pagination:
+  enabled: true
+  per_page: 9
+  title: ':title - Сторінка :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+exclude: ['node_modules', 'gulpfile.js', 'package.json', 'package-lock.json', 'js/common.js', 'npm-debug.log', '**/Thumbs.db', 'libs', 'sass', '**/*.DS_Store']
+
+soc:
+  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+  <li><a href="rss.xml"><i class="fa fa-rss"></i></a></li>
+
+copyright: Копіювання контента та розміщення на інших сайтах заборонено
+

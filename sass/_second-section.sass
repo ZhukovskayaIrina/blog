@@ -1,0 +1,47 @@
+.second-section
+	padding: calc($gutter/2)
+
+.manuals-wrap
+	padding-bottom: calc($gutter/2)
+	.pattern
+		&::before
+			display: none
+	.overlay
+		&::before
+			opacity: 0.4
+	
+.item-manuals
+	min-height: 280px
+	margin: calc($gutter/2) 0
+	color: $text
+	&-content
+		border: 
+			left: #dfdfdf 1px solid
+			bottom: #dfdfdf 1px solid
+		z-index: 1
+		position: absolute
+		bottom: 0
+		background-color: #fff
+		width: 80%
+		padding: $gutter
+		h3
+			font-size: 17px
+			line-height: 1.2
+			margin: 0
+	&:hover
+		h3
+			text-decoration: underline
+	
+.date
+	font-size: 13px
+	font-family: baron-g sans-serif
+	color: $accent
+	font-weight: bold
+
+.aside-box
+	margin-bottom: $gutter
+	text-align: center
+	.img-responsive
+		display: inline-block
+		
+		

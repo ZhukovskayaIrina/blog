@@ -1,0 +1,36 @@
+<section class="pagination-section text-center d-none d-md-block">
+
+		{% if paginator.total_pages > 1 %}
+			{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path }}" class="button">Наступна сторінка
+					<i class="fa fa-angle-double-right"></i>
+				</a>
+			{% endif %}
+		{% endif %}
+		
+		{% if paginator.page_trail %}
+		<div class="pagination">
+				{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path }}" class="pagination-left" title="Попередня сторінка">&laquo;</a>
+					{% else %}
+			<span class="pagination-left" title="Попередня сторінка">&laquo;</span>
+				{% endif %}
+				
+				{% for trail in paginator.page_trail %}
+					{% if page.url == trail.path %}
+					<span class="active">{{ trail.num }}</span>
+					{% else %}
+					<a href="{{ trail.path | remove: 'index.html' }}" title="{{ trail.title }}">{{ trail.num }}</a>
+					{% endif %}
+				{% endfor %}
+		
+				{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path }}" class="pagination-right" title="Наступна сторінка">&raquo;</a>
+					{% else %}
+					<a href="#" class="pagination-right" title="Наступна сторінка">&raquo;</a>
+				{% endif %}
+			
+			</div>
+		{% endif %}
+		
+</section>
